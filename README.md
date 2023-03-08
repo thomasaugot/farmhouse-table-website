@@ -18,4 +18,4 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ## Demo
 
-visit the deployed app at
+visit the deployed app at https://the-good-cartel-restaurant.netlify.app/
