@@ -4,7 +4,7 @@ function BookButton() {
   return (
     <div>
     <a
-        href="#"
+        href="/"
         rel="noreferrer"
       >
         <button className="BookButton">Book a table</button>
