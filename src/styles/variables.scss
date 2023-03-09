@@ -14,78 +14,61 @@ $shuttle-gray: #5c6779;
 
 $font-family: "League Spartan", sans-serif;
 
-@mixin headerSm {
-  font-size: 17px;
+@mixin title {
+  font-size: 46px;
   font-weight: 600;
   line-height: 28px;
   letter-spacing: 2.5px;
-  text-align: center;
-  color: #4c4c4c;
 }
 
-@mixin headerMd {
-  font-size: 20px;
+@mixin whiteSubtitle {
+  font-size: 32px;
+  font-weight: 100;
+  line-height: 40px;
+  max-width: 70vw;
+}
+
+@mixin blackSubtitle {
+  font-size: 32px;
   font-weight: 700;
-  line-height: 24px;
-  letter-spacing: -0.25px;
-  text-align: left;
-  color: $mirage;
+  line-height: 40px;
+  max-width: 70vw;
+  color: #242b37;
+  margin-top: 0;
 }
 
-@mixin headerLg {
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 48px;
-  letter-spacing: -0.5px;
-  text-align: left;
-  color: $ebony-clay;
-}
-
-@mixin headerXL {
-  font-size: 80px;
-  font-weight: 300;
-  line-height: 80px;
-  letter-spacing: -1px;
-  text-align: left;
-  color: $mirage;
-}
-
-@mixin bodyOne {
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 30px;
-  letter-spacing: 0px;
-  text-align: left;
-  color: $ebony-clay;
-}
-
-@mixin bodyTwo {
-  font-size: 16px;
-  font-weight: 400;
+@mixin whiteBody {
+  margin: 0;
+  max-width: 83vw;
   line-height: 26px;
-  letter-spacing: 0px;
-  text-align: left;
-  color: $mirage;
+  font-weight: 500;
+}
+
+@mixin blackBody {
+  margin: 0;
+  max-width: 83vw;
+  line-height: 26px;
+  font-weight: 600;
+  color: #242b37;
 }
 
 // Buttons ///////////////////////////////////////////////////////////////////////////////////////////////////////
 
-@mixin onWhiteButton {
-  height: 64px;
-  width: 170px;
-  border: #111111 solid 1px;
-  color: #111111;
-  background-color: transparent;
+@mixin blackButton {
+  border: white solid 1px;
+  background-color: black;
+  padding: 20px 0;
+  width: 65vw;
+  margin-top: 35px;
+  color: white;
+  text-transform: uppercase;
   &:hover {
-    background: #111111;
-    color: white;
-  }
-  &:disabled {
-    opacity: 25%;
+    transform: scale(1.1);
+    box-shadow: 10px 17px 40px -16px rgba(247, 225, 247, 0.97);
   }
 }
 
-@mixin onDarkButton {
+@mixin transparentButton {
   height: 64px;
   width: 170px;
   background-color: transparent;
