@@ -5,29 +5,38 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
 
-.Header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: black;
-  text-align: center;
-}
+  .Header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    text-align: center;
+  }
 
-.firstSubtitle {
-  color: white;
-  font-size: 32px;
-  font-weight: 100;
-  line-height: 40px;
-  margin: 4vh 12vw;
-}
+  .firstSubtitle {
+    color: white;
+    font-size: 32px;
+    font-weight: 100;
+    line-height: 40px;
+    margin: 2vh 12vw;
+  }
 
-.whiteSubtitle {
-  @include whiteSubtitle();
-}
+  .whiteSubtitle {
+    @include whiteSubtitle();
+  }
 
-.whiteBody {
-  @include whiteBody();
+  .whiteBody {
+    @include whiteBody();
+  }
+
+  .menuItemTitle {
+    margin-top: -5vh;
+    font-size: 26px;
+  }
+
+  .menuItemDescr {
+    margin-top: 1vh;
+  }
 }
