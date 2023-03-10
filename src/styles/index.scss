@@ -12,7 +12,7 @@ body {
   margin: 0;
 }
 
-h1 {
+.title {
   @include title();
 }
 
@@ -50,13 +50,14 @@ h1 {
 
 .transparentButton {
   padding: 20px 65px;
-  margin: 5vh 0 15vh 0;
+  margin: 5vh 0 10vh 0;
   background-color: transparent;
   text-transform: uppercase;
   color: white;
   border: white solid 1px;
   &:hover {
     background: white;
+    color: black;
   }
   &:disabled {
     opacity: 25%;

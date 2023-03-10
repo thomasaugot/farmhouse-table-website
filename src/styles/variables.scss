@@ -16,9 +16,11 @@ $font-family: "League Spartan", sans-serif;
 
 @mixin title {
   font-size: 46px;
-  font-weight: 600;
-  line-height: 28px;
+  font-weight: 700;
+  line-height: 6vh;
   letter-spacing: 2.5px;
+  color: white;
+  margin: 5vh 5vw;
 }
 
 @mixin whiteSubtitle {

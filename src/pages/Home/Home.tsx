@@ -1,4 +1,5 @@
 import Collapsible from "react-collapsible";
+import Footer from "../../components/Footer";
 import "../../styles/Home.scss";
 
 function Home() {
@@ -15,9 +16,7 @@ function Home() {
           }}
           alt="plate"
         />
-        <h1 style={{ color: "white", margin: "35px 5vw 0 5vw", lineHeight: "6vh" }}>
-          farmhouse table
-        </h1>
+        <h1 className="title">farmhouse table</h1>
         <h2 className="firstSubtitle">Exquisite dining since 1989</h2>
         <p className="whiteBody">
           Experience our seasonal menu in beautiful country surroundings. Eat the freshest produce
@@ -26,6 +25,11 @@ function Home() {
         <a href="/" rel="noreferrer">
           <button className="transparentButton">Book a table</button>
         </a>
+        <div>
+          <br></br>
+          <br></br>
+          <br></br>
+        </div>
       </section>
       <section
         style={{
@@ -252,6 +256,7 @@ function Home() {
           <button className="transparentButton">Book a table</button>
         </a>
       </section>
+      <Footer />
     </div>
   );
 }
