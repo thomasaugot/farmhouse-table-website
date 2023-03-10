@@ -25,59 +25,30 @@ $font-family: "League Spartan", sans-serif;
   font-size: 32px;
   font-weight: 100;
   line-height: 40px;
-  max-width: 70vw;
+  color: white;
+  margin: 0 5vw;
 }
 
 @mixin blackSubtitle {
   font-size: 32px;
   font-weight: 700;
   line-height: 40px;
-  max-width: 70vw;
   color: #242b37;
-  margin-top: 0;
+  margin: 0 5vw;
 }
 
 @mixin whiteBody {
   margin: 0;
-  max-width: 83vw;
   line-height: 26px;
   font-weight: 500;
+  color: white;
+  margin: 0 5vw;
 }
 
 @mixin blackBody {
   margin: 0;
-  max-width: 83vw;
   line-height: 26px;
   font-weight: 600;
   color: #242b37;
-}
-
-// Buttons ///////////////////////////////////////////////////////////////////////////////////////////////////////
-
-@mixin blackButton {
-  border: white solid 1px;
-  background-color: black;
-  padding: 20px 0;
-  width: 65vw;
-  margin-top: 35px;
-  color: white;
-  text-transform: uppercase;
-  &:hover {
-    transform: scale(1.1);
-    box-shadow: 10px 17px 40px -16px rgba(247, 225, 247, 0.97);
-  }
-}
-
-@mixin transparentButton {
-  height: 64px;
-  width: 170px;
-  background-color: transparent;
-  color: white;
-  border: white solid 1px;
-  &:hover {
-    background: white;
-  }
-  &:disabled {
-    opacity: 25%;
-  }
+  margin: 0 5vw;
 }

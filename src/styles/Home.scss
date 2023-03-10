@@ -1,0 +1,33 @@
+@import "./variables.scss";
+
+.Home {
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  text-align: center;
+}
+
+.firstSubtitle {
+  color: white;
+  font-size: 32px;
+  font-weight: 100;
+  line-height: 40px;
+  margin: 4vh 12vw;
+}
+
+.whiteSubtitle {
+  @include whiteSubtitle();
+}
+
+.whiteBody {
+  @include whiteBody();
+}
