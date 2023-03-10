@@ -1,3 +1,4 @@
+import Collapsible from "react-collapsible";
 import "../../styles/Home.scss";
 
 function Home() {
@@ -153,7 +154,104 @@ function Home() {
         style={{
           backgroundColor: "white",
         }}
-      ></section>
+      >
+        <div>
+          <br></br>
+          <br></br>
+          <br></br>
+        </div>
+
+        <div>
+          <div className="collapsItem">
+            <Collapsible trigger="Family Gathering" transitionTime={800}>
+              <img
+                src={require("./images/family-gathering-mobile@2x.jpg")}
+                alt="family"
+                className="phoneImg"
+                style={{
+                  width: "80vw",
+                  height: "auto",
+                  margin: "5vh 0 8vh 0",
+                  boxShadow: "0px 28px 55px -9px rgba(0,0,0,0.75)",
+                }}
+              />
+              <p className="blackBody">
+                We love catering for entire families. So please bring everyone along for a special
+                meal with your loved ones. We’ll provide a memorable experience for all.
+              </p>
+              <a href="/" rel="noreferrer">
+                <button className="blackButton">Book a table</button>
+              </a>
+            </Collapsible>
+          </div>
+          <div className="collapsItem">
+            <Collapsible trigger="Special Events" transitionTime={800}>
+              <img
+                src={require("./images/special-events-mobile@2x.jpg")}
+                alt="family"
+                className="phoneImg"
+                style={{
+                  width: "80vw",
+                  height: "auto",
+                  margin: "5vh 0 8vh 0",
+                  boxShadow: "0px 28px 55px -9px rgba(0,0,0,0.75)",
+                }}
+              />
+              <p className="blackBody">
+                Whether it’s a romantic dinner or special date you’re celebrating with others we’ll
+                look after you. We’ll be sure to mark your special date with an unforgettable meal.
+              </p>
+              <a href="/" rel="noreferrer">
+                <button className="blackButton">Book a table</button>
+              </a>
+            </Collapsible>
+          </div>
+          <div className="collapsItem">
+            <Collapsible trigger="Social Events" transitionTime={800}>
+              <img
+                src={require("./images/social-events-mobile@2x.jpg")}
+                alt="family"
+                className="phoneImg"
+                style={{
+                  width: "80vw",
+                  height: "auto",
+                  margin: "5vh 0 8vh 0",
+                  boxShadow: "0px 28px 55px -9px rgba(0,0,0,0.75)",
+                }}
+              />
+              <p className="blackBody">
+                Are you looking to have a larger social event? No problem! We’re more than happy to
+                cater for big parties. We’ll work with you to make your event a hit with everyone.
+              </p>
+              <a href="/" rel="noreferrer">
+                <button className="blackButton">Book a table</button>
+              </a>
+            </Collapsible>
+          </div>
+          <div>
+            <br></br>
+            <br></br>
+            <br></br>
+          </div>
+        </div>
+      </section>
+      <section
+        style={{
+          backgroundImage: `url(${require("./images/ready-bg-mobile.jpg")})`,
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+        }}
+      >
+        <div>
+          <br></br>
+          <br></br>
+          <br></br>
+        </div>
+        <h2 className="whiteSubtitle">Ready to make a reservation?</h2>
+        <a href="/" rel="noreferrer">
+          <button className="transparentButton">Book a table</button>
+        </a>
+      </section>
     </div>
   );
 }

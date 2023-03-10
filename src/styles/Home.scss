@@ -39,4 +39,26 @@
   .menuItemDescr {
     margin-top: 1vh;
   }
+
+  .Collapsible__trigger {
+    @include blackSubtitle();
+    font-size: 26px;
+    font-weight: 200;
+    text-transform: uppercase;
+    color: black;
+    margin: 2vh 0;
+    opacity: 0.7;
+    &:hover {
+      opacity: 1;
+      text-decoration: underline;
+      text-underline-offset: 12px;
+    }
+  }
+  .Collapsible__trigger.is-open {
+    opacity: 1;
+  }
+
+  .collapsItem {
+    margin: 2vh 0;
+  }
 }
