@@ -22,7 +22,7 @@ function Home() {
           Experience our seasonal menu in beautiful country surroundings. Eat the freshest produce
           from the comfort of our farmhouse.
         </p>
-        <a href="/" rel="noreferrer">
+        <a href="/bookings" rel="noreferrer">
           <button className="transparentButton">Book a table</button>
         </a>
         <div>
@@ -183,7 +183,7 @@ function Home() {
                 We love catering for entire families. So please bring everyone along for a special
                 meal with your loved ones. We’ll provide a memorable experience for all.
               </p>
-              <a href="/" rel="noreferrer">
+              <a href="/bookings" rel="noreferrer">
                 <button className="blackButton">Book a table</button>
               </a>
             </Collapsible>
@@ -205,7 +205,7 @@ function Home() {
                 Whether it’s a romantic dinner or special date you’re celebrating with others we’ll
                 look after you. We’ll be sure to mark your special date with an unforgettable meal.
               </p>
-              <a href="/" rel="noreferrer">
+              <a href="/bookings" rel="noreferrer">
                 <button className="blackButton">Book a table</button>
               </a>
             </Collapsible>
@@ -227,7 +227,7 @@ function Home() {
                 Are you looking to have a larger social event? No problem! We’re more than happy to
                 cater for big parties. We’ll work with you to make your event a hit with everyone.
               </p>
-              <a href="/" rel="noreferrer">
+              <a href="/bookings" rel="noreferrer">
                 <button className="blackButton">Book a table</button>
               </a>
             </Collapsible>
@@ -252,7 +252,7 @@ function Home() {
           <br></br>
         </div>
         <h2 className="whiteSubtitle">Ready to make a reservation?</h2>
-        <a href="/" rel="noreferrer">
+        <a href="/bookings" rel="noreferrer">
           <button className="transparentButton">Book a table</button>
         </a>
       </section>
