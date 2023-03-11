@@ -1,5 +1,7 @@
 import Collapsible from "react-collapsible";
 import Footer from "../../components/Footer";
+import { BsChevronCompactDown } from "react-icons/bs";
+// import { IconContext } from "react-icons";
 import "../../styles/Home.scss";
 
 function Home() {
@@ -188,6 +190,10 @@ function Home() {
               </a>
             </Collapsible>
           </div>
+          <span className="chevron">
+            <BsChevronCompactDown />
+          </span>
+
           <div className="collapsItem">
             <Collapsible trigger="Special Events" transitionTime={800}>
               <img
@@ -210,6 +216,10 @@ function Home() {
               </a>
             </Collapsible>
           </div>
+          <span className="chevron">
+            <BsChevronCompactDown />
+          </span>
+
           <div className="collapsItem">
             <Collapsible trigger="Social Events" transitionTime={800}>
               <img
@@ -232,6 +242,10 @@ function Home() {
               </a>
             </Collapsible>
           </div>
+          <span className="chevron">
+            <BsChevronCompactDown />
+          </span>
+
           <div>
             <br></br>
             <br></br>
