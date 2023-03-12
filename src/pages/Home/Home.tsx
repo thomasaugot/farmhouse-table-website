@@ -4,7 +4,7 @@ import { BsChevronCompactDown } from "react-icons/bs";
 // import { IconContext } from "react-icons";
 import "../../styles/Home.scss";
 
-function Home() {
+function Home(): JSX.Element {
   return (
     <div className="Home">
       <section className="Header">

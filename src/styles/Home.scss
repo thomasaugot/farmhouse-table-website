@@ -17,8 +17,10 @@
 
   .firstSubtitle {
     color: white;
-    font-size: 32px;
-    font-weight: 100;
+    font: {
+      size: 32px;
+      weight: 100;
+    }
     line-height: 40px;
     margin: 2vh 12vw;
   }
@@ -42,8 +44,10 @@
 
   .Collapsible__trigger {
     @include blackSubtitle();
-    font-size: 26px;
-    font-weight: 200;
+    font: {
+      size: 26px;
+      weight: 200;
+    }
     text-transform: uppercase;
     color: black;
     margin: 2vh 0;
@@ -54,7 +58,8 @@
       text-underline-offset: 12px;
     }
   }
-  .Collapsible__trigger.is-open {
+
+  &.Collapsible__trigger.is-open {
     opacity: 1;
   }
 
