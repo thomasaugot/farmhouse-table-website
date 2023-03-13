@@ -1,0 +1,15 @@
+@import "./variables.scss";
+
+.Bookings {
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .formSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+  }
+}

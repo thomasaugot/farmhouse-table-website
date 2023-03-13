@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles/index.scss";
 import Bookings from "./pages/Bookings/Bookings";
 import { Routes, Route } from "react-router-dom";
+import Footer from "./components/Footer";
 
 function App(): JSX.Element {
   return (
@@ -11,6 +12,7 @@ function App(): JSX.Element {
         <Route path="/" element={<Home />} />
         <Route path="/bookings" element={<Bookings />} />
       </Routes>
+      <Footer />
     </div>
   );
 }

@@ -1,7 +1,5 @@
 import Collapsible from "react-collapsible";
-import Footer from "../../components/Footer";
 import { BsChevronCompactDown } from "react-icons/bs";
-// import { IconContext } from "react-icons";
 import "../../styles/Home.scss";
 
 function Home(): JSX.Element {
@@ -270,7 +268,6 @@ function Home(): JSX.Element {
           <button className="transparentButton">Book a table</button>
         </a>
       </section>
-      <Footer />
     </div>
   );
 }
