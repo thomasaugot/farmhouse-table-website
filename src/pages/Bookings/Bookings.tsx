@@ -1,3 +1,4 @@
+import BookingForm from "../../components/BookingForm";
 import "../../styles/Bookings.scss";
 
 function Bookings() {
@@ -39,18 +40,9 @@ function Bookings() {
             backgroundColor: "white",
           }}
         >
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
+          <div>
+            <BookingForm />
+          </div>
         </div>
         <a href="/" rel="noreferrer">
           <button className="blackButton">back to homepage</button>
