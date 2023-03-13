@@ -16,6 +16,26 @@ function Home(): JSX.Element {
           }}
           alt="plate"
         />
+        <img
+          className="tabletImg"
+          src={require("./images/hero-bg-tablet@2x.jpg")}
+          style={{
+            objectFit: "fill",
+            width: "100%",
+            height: "auto",
+          }}
+          alt="plate"
+        />
+        <img
+          className="desktopImg"
+          src={require("./images/hero-bg-desktop@2x.jpg")}
+          style={{
+            objectFit: "fill",
+            width: "100%",
+            height: "auto",
+          }}
+          alt="plate"
+        />
         <h1 className="title">farmhouse table</h1>
         <h2 className="firstSubtitle">Exquisite dining since 1989</h2>
         <p className="whiteBody">
@@ -50,6 +70,34 @@ function Home(): JSX.Element {
           }}
           alt="farm"
         />
+        <img
+          src={require("../../pages/Home/images/enjoyable-place-tablet@2x.jpg")}
+          className="tabletImg"
+          style={{
+            overflow: "visible",
+            width: "80vw",
+            height: "auto",
+            margin: "5vh 0 0 0",
+            boxShadow: "0px 28px 55px -9px rgba(0,0,0,0.75)",
+            position: "relative",
+            bottom: "15vh",
+          }}
+          alt="farm"
+        />
+        <img
+          src={require("../../pages/Home/images/enjoyable-place-desktop@2x.jpg")}
+          className="desktopImg"
+          style={{
+            overflow: "visible",
+            width: "80vw",
+            height: "auto",
+            margin: "5vh 0 0 0",
+            boxShadow: "0px 28px 55px -9px rgba(0,0,0,0.75)",
+            position: "relative",
+            bottom: "15vh",
+          }}
+          alt="farm"
+        />
         <h2 className="blackSubtitle" style={{ margin: "-7vh 0 3vh 0" }}>
           Enjoyable place for all the family
         </h2>
@@ -60,6 +108,28 @@ function Home(): JSX.Element {
         <img
           src={require("../../pages/Home/images/locally-sourced-mobile@2x.jpg")}
           className="phoneImg"
+          style={{
+            width: "80vw",
+            height: "auto",
+            margin: "5vh 0 8vh 0",
+            boxShadow: "0px 28px 55px -9px rgba(0,0,0,0.75)",
+          }}
+          alt="plate"
+        />
+        <img
+          src={require("../../pages/Home/images/locally-sourced-tablet@2x.jpg")}
+          className="tabletImg"
+          style={{
+            width: "80vw",
+            height: "auto",
+            margin: "5vh 0 8vh 0",
+            boxShadow: "0px 28px 55px -9px rgba(0,0,0,0.75)",
+          }}
+          alt="plate"
+        />
+        <img
+          src={require("../../pages/Home/images/locally-sourced-desktop@2x.jpg")}
+          className="desktopImg"
           style={{
             width: "80vw",
             height: "auto",
@@ -94,56 +164,135 @@ function Home(): JSX.Element {
           We cater for all dietary requirements, but here’s a glimpse at some of our diner’s
           favourites. Our menu is revamped every season.
         </p>
-        <div>
-          <img
-            src={require("./images/salmon-mobile@2x.jpg")}
-            alt="plate"
-            className="phoneImg"
-            style={{
-              width: "80vw",
-              height: "auto",
-              margin: "5vh 0 8vh 0",
-              boxShadow: "0px 28px 55px -9px rgba(0,0,0,0.75)",
-            }}
-          />
-          <h3 className="whiteSubtitle menuItemTitle">Seared Salmon Fillet</h3>
-          <p className="whiteBody menuItemDescr">
-            Our locally sourced salmon served with a refreshing buckwheat summer salad.
-          </p>
+        <div className="menuHighligths">
+          <div>
+            <img
+              src={require("./images/salmon-mobile@2x.jpg")}
+              alt="plate"
+              className="phoneImg"
+              style={{
+                width: "80vw",
+                height: "auto",
+                margin: "5vh 0 8vh 0",
+                boxShadow: "0px 28px 55px -9px rgba(0,0,0,0.75)",
+              }}
+            />
+            <img
+              src={require("./images/salmon-desktop-tablet@2x.jpg")}
+              alt="plate"
+              className="tabletImg"
+              style={{
+                width: "30vw",
+                height: "auto",
+                margin: "5vh 0 8vh 8vw",
+                boxShadow: "0px 28px 55px -9px rgba(0,0,0,0.75)",
+              }}
+            />
+            <img
+              src={require("./images/salmon-desktop-tablet@2x.jpg")}
+              alt="plate"
+              className="desktopImg"
+              style={{
+                width: "80vw",
+                height: "auto",
+                margin: "5vh 0 8vh 0",
+                boxShadow: "0px 28px 55px -9px rgba(0,0,0,0.75)",
+              }}
+            />
+          </div>
+          <div>
+            <h3 className="whiteSubtitle menuItemTitle">Seared Salmon Fillet</h3>
+            <p className="whiteBody menuItemDescr">
+              Our locally sourced salmon served with a refreshing buckwheat summer salad.
+            </p>
+          </div>
         </div>
-        <div>
-          <img
-            src={require("./images/beef-mobile@2x.jpg")}
-            alt="plate"
-            className="phoneImg"
-            style={{
-              width: "80vw",
-              height: "auto",
-              margin: "5vh 0 8vh 0",
-              boxShadow: "0px 28px 55px -9px rgba(0,0,0,0.75)",
-            }}
-          />
-          <h3 className="whiteSubtitle menuItemTitle">Rosemary Filet Mignon</h3>
-          <p className="whiteBody menuItemDescr">
-            Our prime beef served to your taste with a delicious choice of seasonal sides.
-          </p>
+        <div className="menuHighligths">
+          <div>
+            <img
+              src={require("./images/beef-mobile@2x.jpg")}
+              alt="plate"
+              className="phoneImg"
+              style={{
+                width: "80vw",
+                height: "auto",
+                margin: "5vh 0 8vh 0",
+                boxShadow: "0px 28px 55px -9px rgba(0,0,0,0.75)",
+              }}
+            />
+            <img
+              src={require("./images/beef-desktop-tablet@2x.jpg")}
+              alt="plate"
+              className="tabletImg"
+              style={{
+                width: "30vw",
+                height: "auto",
+                margin: "5vh 0 8vh 8vw",
+                boxShadow: "0px 28px 55px -9px rgba(0,0,0,0.75)",
+              }}
+            />
+            <img
+              src={require("./images/beef-desktop-tablet@2x.jpg")}
+              alt="plate"
+              className="desktopImg"
+              style={{
+                width: "80vw",
+                height: "auto",
+                margin: "5vh 0 8vh 0",
+                boxShadow: "0px 28px 55px -9px rgba(0,0,0,0.75)",
+              }}
+            />
+          </div>
+          <div>
+            <h3 className="whiteSubtitle menuItemTitle">Rosemary Filet Mignon</h3>
+            <p className="whiteBody menuItemDescr">
+              Our prime beef served to your taste with a delicious choice of seasonal sides.
+            </p>
+          </div>
         </div>
-        <div>
-          <img
-            src={require("./images/chocolate-mobile@2x.jpg")}
-            alt="plate"
-            className="phoneImg"
-            style={{
-              width: "80vw",
-              height: "auto",
-              margin: "5vh 0 8vh 0",
-              boxShadow: "0px 28px 55px -9px rgba(0,0,0,0.75)",
-            }}
-          />
-          <h3 className="whiteSubtitle menuItemTitle">Summer Fruit Chocolate Mousse</h3>
-          <p className="whiteBody menuItemDescr">
-            Creamy mousse combined with summer fruits and dark chocolate shavings.
-          </p>
+        <div className="menuHighligths">
+          <div>
+            <img
+              src={require("./images/chocolate-mobile@2x.jpg")}
+              alt="plate"
+              className="phoneImg"
+              style={{
+                width: "80vw",
+                height: "auto",
+                margin: "5vh 0 8vh 0",
+                boxShadow: "0px 28px 55px -9px rgba(0,0,0,0.75)",
+              }}
+            />
+            <img
+              src={require("./images/chocolate-desktop-tablet@2x.jpg")}
+              alt="plate"
+              className="tabletImg"
+              style={{
+                width: "30vw",
+                height: "auto",
+                margin: "5vh 0 8vh 8vw",
+                boxShadow: "0px 28px 55px -9px rgba(0,0,0,0.75)",
+              }}
+            />
+            <img
+              src={require("./images/chocolate-desktop-tablet@2x.jpg")}
+              alt="plate"
+              className="desktopImg"
+              style={{
+                width: "80vw",
+                height: "auto",
+                margin: "5vh 0 8vh 0",
+                boxShadow: "0px 28px 55px -9px rgba(0,0,0,0.75)",
+              }}
+            />
+          </div>
+          <div>
+            <h3 className="whiteSubtitle menuItemTitle">Summer Fruit Chocolate Mousse</h3>
+            <p className="whiteBody menuItemDescr">
+              Creamy mousse combined with summer fruits and dark chocolate shavings.
+            </p>
+          </div>
+
           <div>
             <br></br>
             <br></br>
@@ -179,6 +328,28 @@ function Home(): JSX.Element {
                   boxShadow: "0px 28px 55px -9px rgba(0,0,0,0.75)",
                 }}
               />
+              <img
+                src={require("./images/family-gathering-tablet@2x.jpg")}
+                alt="family"
+                className="tabletImg"
+                style={{
+                  width: "80vw",
+                  height: "auto",
+                  margin: "5vh 0 8vh 0",
+                  boxShadow: "0px 28px 55px -9px rgba(0,0,0,0.75)",
+                }}
+              />
+              <img
+                src={require("./images/family-gathering-desktop@2x.jpg")}
+                alt="family"
+                className="desktopImg"
+                style={{
+                  width: "80vw",
+                  height: "auto",
+                  margin: "5vh 0 8vh 0",
+                  boxShadow: "0px 28px 55px -9px rgba(0,0,0,0.75)",
+                }}
+              />
               <p className="blackBody">
                 We love catering for entire families. So please bring everyone along for a special
                 meal with your loved ones. We’ll provide a memorable experience for all.
@@ -205,6 +376,28 @@ function Home(): JSX.Element {
                   boxShadow: "0px 28px 55px -9px rgba(0,0,0,0.75)",
                 }}
               />
+              <img
+                src={require("./images/special-events-tablet@2x.jpg")}
+                alt="family"
+                className="tabletImg"
+                style={{
+                  width: "80vw",
+                  height: "auto",
+                  margin: "5vh 0 8vh 0",
+                  boxShadow: "0px 28px 55px -9px rgba(0,0,0,0.75)",
+                }}
+              />
+              <img
+                src={require("./images/special-events-desktop@2x.jpg")}
+                alt="family"
+                className="desktopImg"
+                style={{
+                  width: "80vw",
+                  height: "auto",
+                  margin: "5vh 0 8vh 0",
+                  boxShadow: "0px 28px 55px -9px rgba(0,0,0,0.75)",
+                }}
+              />
               <p className="blackBody">
                 Whether it’s a romantic dinner or special date you’re celebrating with others we’ll
                 look after you. We’ll be sure to mark your special date with an unforgettable meal.
@@ -224,6 +417,28 @@ function Home(): JSX.Element {
                 src={require("./images/social-events-mobile@2x.jpg")}
                 alt="family"
                 className="phoneImg"
+                style={{
+                  width: "80vw",
+                  height: "auto",
+                  margin: "5vh 0 8vh 0",
+                  boxShadow: "0px 28px 55px -9px rgba(0,0,0,0.75)",
+                }}
+              />
+              <img
+                src={require("./images/social-events-tablet@2x.jpg")}
+                alt="family"
+                className="tabletImg"
+                style={{
+                  width: "80vw",
+                  height: "auto",
+                  margin: "5vh 0 8vh 0",
+                  boxShadow: "0px 28px 55px -9px rgba(0,0,0,0.75)",
+                }}
+              />
+              <img
+                src={require("./images/social-events-desktop@2x.jpg")}
+                alt="family"
+                className="desktopImg"
                 style={{
                   width: "80vw",
                   height: "auto",
