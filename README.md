@@ -1,6 +1,6 @@
-# Dine Restaurant Website
+# Farmhouse Table | Restaurant Website
 
-I created this application as part of a coding challenge at Frontend Mentor.
+I created this application based on a coding challenge at Frontend Mentor which I modified to have it personalized.
 It is a restaurant landing page based on 2 pages, one homepage and one booking page.
 
 ## Featured Tech stack
@@ -8,6 +8,11 @@ It is a restaurant landing page based on 2 pages, one homepage and one booking p
 - React
 - SCSS
 - Typescript
+
+In this app, I have integrated:
+
+- A reservation form
+- Google Maps API
 
 ## How to run the app in dev mode
 
