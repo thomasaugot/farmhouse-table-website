@@ -1,7 +1,7 @@
 # Farmhouse Table | Restaurant Website
 
-I created this application based on a coding challenge at Frontend Mentor which I modified to have it personalized.
-It is a restaurant landing page based on 2 pages, one homepage and one booking page. The whole app is fully responsive based on mobile first principles.
+I created this application based on a coding challenge's design.
+It is a restaurant landing page based on 2 pages, one homepage and one booking page. The whole app is fully responsive based on the mobile first workflow, using flexbox.
 
 <br>
 

@@ -8,21 +8,13 @@
 
   .Header {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     background-color: black;
     text-align: center;
   }
 
   .firstSubtitle {
     color: white;
-    font: {
-      size: 32px;
-      weight: 100;
-    }
-    line-height: 40px;
-    margin: 2vh 12vw;
+    font-weight: 100;
   }
 
   .whiteSubtitle {
@@ -62,29 +54,12 @@
     top: -20px;
   }
 
-  .longLineDeco {
-    background-color: rgb(158, 127, 102);
-    height: 3px;
-    width: 83vw;
-    margin: 0 auto 2.5vh auto;
-  }
-
-  .smallLineDeco {
-    background-color: rgb(158, 127, 102);
-    height: 5px;
-    width: 20vw;
-    margin: 0 auto 5vh auto;
-  }
-
   .linesPattern {
-    width: 180px;
     position: absolute;
     z-index: 1;
   }
 
   .shapePattern {
-    width: 50vw;
-    height: 25vh;
     position: absolute;
     z-index: 1;
   }
@@ -101,16 +76,25 @@
     display: none;
   }
 
+  .firstSubtitle {
+    font-size: 32px;
+    margin: 2vh 12vw;
+    line-height: 40px;
+  }
+
   .whiteSubtitle {
     font-size: 32px;
+    margin: 0 5vw;
   }
 
   .blackSubtitle {
     font-size: 32px;
+    margin: 0 5vw;
   }
 
   .whiteBody {
     line-height: 26px;
+    margin: 5vw;
   }
 
   .menuItemTitle {
@@ -119,6 +103,12 @@
 
   .Collapsible__trigger {
     font-size: 26px;
+  }
+
+  .Header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -131,6 +121,7 @@
   .blackBody {
     font-size: 28px;
     line-height: 40px;
+    margin: 0 5vw;
   }
 
   .phoneImg,
@@ -155,10 +146,16 @@
 
   .whiteSubtitle {
     font-size: 46px;
+    margin: 0 5vw;
   }
 
   .blackSubtitle {
     font-size: 46px;
+    margin: 0 5vw;
+  }
+
+  .whiteBody {
+    margin: 5vw;
   }
 
   .menuItemTitle {
@@ -168,12 +165,135 @@
   .Collapsible__trigger {
     font-size: 46px;
   }
+
+  .Header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .shapePattern {
+    width: 50vw;
+    height: 25vh;
+    top: 1300px;
+    left: 0px;
+  }
+
+  .linesPattern {
+    width: 140px;
+    right: 40px;
+    top: 1950px;
+  }
+
+  .longLineDeco {
+    background-color: rgb(158, 127, 102);
+    height: 3px;
+    width: 83vw;
+    margin: 0 auto 2.5vh auto;
+  }
+
+  .smallLineDeco {
+    background-color: rgb(158, 127, 102);
+    height: 5px;
+    width: 20vw;
+    margin: 0 auto 5vh auto;
+  }
 }
 
 // Desktop
 @media only screen and (min-width: 961px) {
   .phoneImg,
-  .tabImg {
+  .tabletImg {
     display: none;
+  }
+
+  .Header {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .firstSubtitle {
+    font-size: 70px;
+  }
+
+  .intro {
+    position: absolute;
+    width: 40vw;
+    margin: 6vh 10vw;
+    text-align: left;
+  }
+
+  .title {
+    margin: 6vh 8vw 3vh 8vw;
+    line-height: 60px;
+  }
+
+  .firstSubtitle,
+  .whiteBody,
+  .blackBody {
+    margin: 0;
+  }
+
+  .maxScreenText {
+    width: 30vw;
+    font-size: 18px;
+  }
+
+  .photoSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -10vh 10vw -15vh 10vw;
+  }
+
+  .Imgdescription {
+    margin: 30vh 3vw 20vh 3vw;
+    text-align: left;
+  }
+
+  .shapePattern {
+    width: 55vw;
+    height: 35vh;
+    position: absolute;
+    top: 1000px;
+    left: 0;
+  }
+
+  .linesPattern {
+    width: 180px;
+    right: 40px;
+    top: 1600px;
+  }
+
+  .menuSection {
+    display: flex;
+  }
+
+  .tabLayout {
+    text-align: left;
+    margin: 0 0 0 10px;
+  }
+
+  .menuHighligths {
+    display: flex;
+    margin-top: 50px;
+  }
+
+  .firstColumn {
+    width: 50%;
+    text-align: left;
+    margin: 38vh 0 0 5vw;
+  }
+
+  .secondColumn {
+    width: 50vw;
+    margin: 24vh 4vw 4vh 8vw;
+  }
+
+  .longLineDeco {
+    background-color: rgb(158, 127, 102);
+    height: 3px;
+    width: 83vw;
+    margin: -1px 0 0 0;
   }
 }

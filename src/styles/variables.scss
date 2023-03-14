@@ -27,20 +27,17 @@ $font-family: "League Spartan", sans-serif;
   font-weight: 600;
   line-height: 40px;
   color: white;
-  margin: 0 5vw;
 }
 
 @mixin blackSubtitle {
   font-weight: 700;
   line-height: 40px;
   color: #242b37;
-  margin: 0 5vw;
 }
 
 @mixin whiteBody {
   font-weight: 500;
   color: white;
-  margin: 5vw;
 }
 
 @mixin blackBody {

@@ -34,21 +34,25 @@ function Home(): JSX.Element {
           className="desktopImg"
           src={require("./images/hero-bg-desktop@2x.jpg")}
           style={{
-            objectFit: "fill",
-            width: "100%",
-            height: "auto",
+            width: "auto",
+            height: "130vh",
           }}
           alt="plate"
         />
-        <h1 className="title">farmhouse table</h1>
-        <h2 className="firstSubtitle">Exquisite dining since 1989</h2>
-        <p className="whiteBody">
-          Experience our seasonal menu in beautiful country surroundings. Eat the freshest produce
-          from the comfort of our farmhouse.
-        </p>
-        <a href="/bookings" rel="noreferrer">
-          <button className="transparentButton">Book a table</button>
-        </a>
+        <div>
+          <h1 className="title">farmhouse table</h1>
+          <div className="intro">
+            <h2 className="firstSubtitle">Exquisite dining since 1989</h2>
+            <p className="whiteBody maxScreenText">
+              Experience our seasonal menu in beautiful country surroundings. Eat the freshest
+              produce from the comfort of our farmhouse.
+            </p>
+            <a href="/bookings" rel="noreferrer">
+              <button className="transparentButton">Book a table</button>
+            </a>
+          </div>
+        </div>
+
         <div>
           <br></br>
           <br></br>
@@ -60,105 +64,108 @@ function Home(): JSX.Element {
           backgroundColor: "white",
         }}
       >
-        <img
-          src={require("../../pages/Home/images/enjoyable-place-mobile@2x.jpg")}
-          className="phoneImg"
-          style={{
-            overflow: "visible",
-            width: "80vw",
-            height: "auto",
-            margin: "5vh 0 0 0",
-            boxShadow: "0px 28px 55px -9px rgba(0,0,0,0.75)",
-            position: "relative",
-            bottom: "15vh",
-          }}
-          alt="farm"
-        />
-        <img
-          src={require("../../pages/Home/images/enjoyable-place-tablet@2x.jpg")}
-          className="tabletImg"
-          style={{
-            overflow: "visible",
-            width: "80vw",
-            height: "auto",
-            margin: "5vh 0 0 0",
-            boxShadow: "0px 28px 55px -9px rgba(0,0,0,0.75)",
-            position: "relative",
-            bottom: "15vh",
-          }}
-          alt="farm"
-        />
-        <img
-          src={require("../../pages/Home/images/enjoyable-place-desktop@2x.jpg")}
-          className="desktopImg"
-          style={{
-            overflow: "visible",
-            width: "80vw",
-            height: "auto",
-            margin: "5vh 0 0 0",
-            boxShadow: "0px 28px 55px -9px rgba(0,0,0,0.75)",
-            position: "relative",
-            bottom: "15vh",
-          }}
-          alt="farm"
-        />
-        <img
-          src={curveTopRightPattern}
-          className="shapePattern"
-          alt="pattern"
-          style={{ top: "1300px", left: "0px" }}
-        />
-        <h2 className="blackSubtitle" style={{ margin: "-7vh 0 3vh 0" }}>
-          Enjoyable place for all the family
-        </h2>
-        <p className="blackBody">
-          Our relaxed surroundings make dining with us a great experience for everyone. We can even
-          arrange a tour of the farm before your meal.
-        </p>
-        <img
-          src={require("../../pages/Home/images/locally-sourced-mobile@2x.jpg")}
-          className="phoneImg"
-          style={{
-            width: "80vw",
-            height: "auto",
-            margin: "5vh 0 8vh 0",
-            boxShadow: "0px 28px 55px -9px rgba(0,0,0,0.75)",
-          }}
-          alt="plate"
-        />
-        <img
-          src={require("../../pages/Home/images/locally-sourced-tablet@2x.jpg")}
-          className="tabletImg"
-          style={{
-            width: "80vw",
-            height: "auto",
-            margin: "5vh 0 8vh 0",
-            boxShadow: "0px 28px 55px -9px rgba(0,0,0,0.75)",
-          }}
-          alt="plate"
-        />
-        <img
-          src={require("../../pages/Home/images/locally-sourced-desktop@2x.jpg")}
-          className="desktopImg"
-          style={{
-            width: "80vw",
-            height: "auto",
-            margin: "5vh 0 8vh 0",
-            boxShadow: "0px 28px 55px -9px rgba(0,0,0,0.75)",
-          }}
-          alt="plate"
-        />
-        <img
-          src={linesPattern}
-          className="linesPattern"
-          alt="pattern"
-          style={{ right: "40px", top: "2000px" }}
-        />
-        <h2 className="blackSubtitle">The most locally sourced food</h2>
-        <p className="blackBody">
-          All our ingredients come directly from our farm or local fishery. So you can be sure that
-          you’re eating the freshest, most sustainable food.
-        </p>
+        <div className="photoSection" style={{ flexDirection: "row" }}>
+          <img
+            src={require("../../pages/Home/images/enjoyable-place-mobile@2x.jpg")}
+            className="phoneImg"
+            style={{
+              overflow: "visible",
+              width: "80vw",
+              height: "auto",
+              margin: "5vh 0 0 0",
+              boxShadow: "0px 28px 55px -9px rgba(0,0,0,0.75)",
+              position: "relative",
+              bottom: "15vh",
+            }}
+            alt="farm"
+          />
+          <img
+            src={require("../../pages/Home/images/enjoyable-place-tablet@2x.jpg")}
+            className="tabletImg"
+            style={{
+              overflow: "visible",
+              width: "80vw",
+              height: "auto",
+              margin: "5vh 0 0 0",
+              boxShadow: "0px 28px 55px -9px rgba(0,0,0,0.75)",
+              position: "relative",
+              bottom: "15vh",
+            }}
+            alt="farm"
+          />
+          <img
+            src={require("../../pages/Home/images/enjoyable-place-desktop@2x.jpg")}
+            className="desktopImg"
+            style={{
+              overflow: "visible",
+              width: "450px",
+              height: "auto",
+              margin: "5vh 0 0 0",
+              boxShadow: "0px 28px 55px -9px rgba(0,0,0,0.75)",
+              position: "relative",
+              bottom: "15vh",
+            }}
+            alt="farm"
+          />
+          <img src={curveTopRightPattern} className="shapePattern" alt="pattern" />
+          <div className="Imgdescription">
+            <h2 className="blackSubtitle" style={{ margin: "-7vh 0 3vh 0" }}>
+              Enjoyable place for all the family
+            </h2>
+            <p className="blackBody">
+              Our relaxed surroundings make dining with us a great experience for everyone. We can
+              even arrange a tour of the farm before your meal.
+            </p>
+          </div>
+        </div>
+
+        <div className="photoSection" style={{ flexDirection: "row-reverse" }}>
+          <img
+            src={require("../../pages/Home/images/locally-sourced-mobile@2x.jpg")}
+            className="phoneImg"
+            style={{
+              width: "80vw",
+              height: "auto",
+              margin: "5vh 0 8vh 0",
+              boxShadow: "0px 28px 55px -9px rgba(0,0,0,0.75)",
+            }}
+            alt="plate"
+          />
+          <img
+            src={require("../../pages/Home/images/locally-sourced-tablet@2x.jpg")}
+            className="tabletImg"
+            style={{
+              width: "80vw",
+              height: "auto",
+              margin: "5vh 0 8vh 0",
+              boxShadow: "0px 28px 55px -9px rgba(0,0,0,0.75)",
+            }}
+            alt="plate"
+          />
+          <img
+            src={require("../../pages/Home/images/locally-sourced-desktop@2x.jpg")}
+            className="desktopImg"
+            style={{
+              width: "450px",
+              height: "auto",
+              margin: "0",
+              overflow: "visible",
+              position: "relative",
+              top: "100px",
+              boxShadow: "0px 28px 55px -9px rgba(0,0,0,0.75)",
+            }}
+            alt="plate"
+          />
+          <img src={linesPattern} className="linesPattern" alt="pattern" />
+          <div className="Imgdescription">
+            <h2 className="blackSubtitle">The most locally sourced food</h2>
+            <p className="blackBody">
+              All our ingredients come directly from our farm or local fishery. So you can be sure
+              that you’re eating the freshest, most sustainable food.
+            </p>
+          </div>
+        </div>
+
         <div>
           <br></br>
           <br></br>
@@ -166,149 +173,153 @@ function Home(): JSX.Element {
           <br></br>
         </div>
       </section>
-      <section style={{ backgroundColor: "black" }}>
+      <section style={{ backgroundColor: "black" }} className="menuSection">
         <div>
           <br></br>
           <br></br>
           <br></br>
         </div>
         <hr className="smallLineDeco" />
-        <h2 className="whiteSubtitle">A few highlights from our menu</h2>
-        <p className="whiteBody">
-          We cater for all dietary requirements, but here’s a glimpse at some of our diner’s
-          favourites. Our menu is revamped every season.
-        </p>
-        <div className="menuHighligths">
-          <div>
-            <img
-              src={require("./images/salmon-mobile@2x.jpg")}
-              alt="plate"
-              className="phoneImg"
-              style={{
-                width: "80vw",
-                height: "auto",
-                margin: "5vh 0 8vh 0",
-                boxShadow: "0px 28px 55px -9px rgba(0,0,0,0.75)",
-              }}
-            />
-            <img
-              src={require("./images/salmon-desktop-tablet@2x.jpg")}
-              alt="plate"
-              className="tabletImg"
-              style={{
-                width: "30vw",
-                height: "auto",
-                margin: "5vh 0 8vh 8vw",
-                boxShadow: "0px 28px 55px -9px rgba(0,0,0,0.75)",
-              }}
-            />
-            <img
-              src={require("./images/salmon-desktop-tablet@2x.jpg")}
-              alt="plate"
-              className="desktopImg"
-              style={{
-                width: "80vw",
-                height: "auto",
-                margin: "5vh 0 8vh 0",
-                boxShadow: "0px 28px 55px -9px rgba(0,0,0,0.75)",
-              }}
-            />
-          </div>
-          <div className="tabLayout">
-            <h3 className="whiteSubtitle menuItemTitle">Seared Salmon Fillet</h3>
-            <p className="whiteBody menuItemDescr">
-              Our locally sourced salmon served with a refreshing buckwheat summer salad.
-            </p>
-          </div>
+        <div className="firstColumn">
+          <h2 className="whiteSubtitle">A few highlights from our menu</h2>
+          <p className="whiteBody">
+            We cater for all dietary requirements, but here’s a glimpse at some of our diner’s
+            favourites. Our menu is revamped every season.
+          </p>
         </div>
-        <hr className="longLineDeco"></hr>
-        <div className="menuHighligths">
-          <div className="menuItem">
-            <img
-              src={require("./images/beef-mobile@2x.jpg")}
-              alt="plate"
-              className="phoneImg"
-              style={{
-                width: "80vw",
-                height: "auto",
-                margin: "5vh 0 8vh 0",
-                boxShadow: "0px 28px 55px -9px rgba(0,0,0,0.75)",
-              }}
-            />
-            <img
-              src={require("./images/beef-desktop-tablet@2x.jpg")}
-              alt="plate"
-              className="tabletImg"
-              style={{
-                width: "30vw",
-                height: "auto",
-                margin: "5vh 0 8vh 8vw",
-                boxShadow: "0px 28px 55px -9px rgba(0,0,0,0.75)",
-              }}
-            />
-            <img
-              src={require("./images/beef-desktop-tablet@2x.jpg")}
-              alt="plate"
-              className="desktopImg"
-              style={{
-                width: "80vw",
-                height: "auto",
-                margin: "5vh 0 8vh 0",
-                boxShadow: "0px 28px 55px -9px rgba(0,0,0,0.75)",
-              }}
-            />
+        <div className="secondColumn">
+          <div className="menuHighligths">
+            <div>
+              <img
+                src={require("./images/salmon-mobile@2x.jpg")}
+                alt="plate"
+                className="phoneImg"
+                style={{
+                  width: "80vw",
+                  height: "auto",
+                  margin: "5vh 0 8vh 0",
+                  boxShadow: "0px 28px 55px -9px rgba(0,0,0,0.75)",
+                }}
+              />
+              <img
+                src={require("./images/salmon-desktop-tablet@2x.jpg")}
+                alt="plate"
+                className="tabletImg"
+                style={{
+                  width: "30vw",
+                  height: "auto",
+                  margin: "5vh 0 8vh 8vw",
+                  boxShadow: "0px 28px 55px -9px rgba(0,0,0,0.75)",
+                }}
+              />
+              <img
+                src={require("./images/salmon-desktop-tablet@2x.jpg")}
+                alt="plate"
+                className="desktopImg"
+                style={{
+                  width: "15vw",
+                  height: "auto",
+                  margin: "0",
+                  boxShadow: "0px 28px 55px -9px rgba(0,0,0,0.75)",
+                }}
+              />
+            </div>
+            <div className="tabLayout">
+              <h3 className="whiteSubtitle menuItemTitle">Seared Salmon Fillet</h3>
+              <p className="whiteBody menuItemDescr">
+                Our locally sourced salmon served with a refreshing buckwheat summer salad.
+              </p>
+            </div>
           </div>
-          <div className="tabLayout">
-            <h3 className="whiteSubtitle menuItemTitle">Rosemary Filet Mignon</h3>
-            <p className="whiteBody menuItemDescr">
-              Our prime beef served to your taste with a delicious choice of seasonal sides.
-            </p>
+          <hr className="longLineDeco"></hr>
+          <div className="menuHighligths">
+            <div className="menuItem">
+              <img
+                src={require("./images/beef-mobile@2x.jpg")}
+                alt="plate"
+                className="phoneImg"
+                style={{
+                  width: "80vw",
+                  height: "auto",
+                  margin: "5vh 0 8vh 0",
+                  boxShadow: "0px 28px 55px -9px rgba(0,0,0,0.75)",
+                }}
+              />
+              <img
+                src={require("./images/beef-desktop-tablet@2x.jpg")}
+                alt="plate"
+                className="tabletImg"
+                style={{
+                  width: "30vw",
+                  height: "auto",
+                  margin: "5vh 0 8vh 8vw",
+                  boxShadow: "0px 28px 55px -9px rgba(0,0,0,0.75)",
+                }}
+              />
+              <img
+                src={require("./images/beef-desktop-tablet@2x.jpg")}
+                alt="plate"
+                className="desktopImg"
+                style={{
+                  width: "15vw",
+                  height: "auto",
+                  margin: "0",
+                  boxShadow: "0px 28px 55px -9px rgba(0,0,0,0.75)",
+                }}
+              />
+            </div>
+            <div className="tabLayout">
+              <h3 className="whiteSubtitle menuItemTitle">Rosemary Filet Mignon</h3>
+              <p className="whiteBody menuItemDescr">
+                Our prime beef served to your taste with a delicious choice of seasonal sides.
+              </p>
+            </div>
           </div>
-        </div>
-        <hr className="longLineDeco"></hr>
-        <div className="menuHighligths">
-          <div>
-            <img
-              src={require("./images/chocolate-mobile@2x.jpg")}
-              alt="plate"
-              className="phoneImg"
-              style={{
-                width: "80vw",
-                height: "auto",
-                margin: "5vh 0 8vh 0",
-                boxShadow: "0px 28px 55px -9px rgba(0,0,0,0.75)",
-              }}
-            />
-            <img
-              src={require("./images/chocolate-desktop-tablet@2x.jpg")}
-              alt="plate"
-              className="tabletImg"
-              style={{
-                width: "30vw",
-                height: "auto",
-                margin: "5vh 0 8vh 8vw",
-                boxShadow: "0px 28px 55px -9px rgba(0,0,0,0.75)",
-              }}
-            />
-            <img
-              src={require("./images/chocolate-desktop-tablet@2x.jpg")}
-              alt="plate"
-              className="desktopImg"
-              style={{
-                width: "80vw",
-                height: "auto",
-                margin: "5vh 0 8vh 0",
-                boxShadow: "0px 28px 55px -9px rgba(0,0,0,0.75)",
-              }}
-            />
+          <hr className="longLineDeco"></hr>
+          <div className="menuHighligths">
+            <div>
+              <img
+                src={require("./images/chocolate-mobile@2x.jpg")}
+                alt="plate"
+                className="phoneImg"
+                style={{
+                  width: "10vw",
+                  height: "auto",
+                  margin: "5vh 0 8vh 0",
+                  boxShadow: "0px 28px 55px -9px rgba(0,0,0,0.75)",
+                }}
+              />
+              <img
+                src={require("./images/chocolate-desktop-tablet@2x.jpg")}
+                alt="plate"
+                className="tabletImg"
+                style={{
+                  width: "30vw",
+                  height: "auto",
+                  margin: "5vh 0 8vh 8vw",
+                  boxShadow: "0px 28px 55px -9px rgba(0,0,0,0.75)",
+                }}
+              />
+              <img
+                src={require("./images/chocolate-desktop-tablet@2x.jpg")}
+                alt="plate"
+                className="desktopImg"
+                style={{
+                  width: "15vw",
+                  height: "auto",
+                  margin: "0",
+                  boxShadow: "0px 28px 55px -9px rgba(0,0,0,0.75)",
+                }}
+              />
+            </div>
+            <div className="tabLayout">
+              <h3 className="whiteSubtitle menuItemTitle">Summer Fruit Chocolate Mousse</h3>
+              <p className="whiteBody menuItemDescr">
+                Creamy mousse combined with summer fruits and dark chocolate shavings.
+              </p>
+            </div>
           </div>
-          <div className="tabLayout">
-            <h3 className="whiteSubtitle menuItemTitle">Summer Fruit Chocolate Mousse</h3>
-            <p className="whiteBody menuItemDescr">
-              Creamy mousse combined with summer fruits and dark chocolate shavings.
-            </p>
-          </div>
-
+          <hr className="longLineDeco"></hr>
           <div>
             <br></br>
             <br></br>
