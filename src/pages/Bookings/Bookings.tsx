@@ -13,16 +13,15 @@ function Bookings() {
       >
         <br></br>
         <h1 className="title">farmhouse table</h1>
-        <h2 className="firstSubtitle" style={{ color: "white" }}>
+        <h2 className="whiteSubtitle" style={{ color: "white" }}>
           Reservations
         </h2>
         <p className="whiteBody">
           We can’t wait to host you. If you have any special requirements please feel free to call
           on the phone number below. We’ll be happy to accommodate you.
         </p>
-        <a href="/bookings" rel="noreferrer">
-          <button className="transparentButton">Reserve Place</button>
-        </a>
+        <br></br>
+        <br></br>
         <br></br>
         <br></br>
         <br></br>

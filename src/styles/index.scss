@@ -37,11 +37,11 @@ body {
 .blackButton {
   border: white solid 1px;
   background-color: black;
-  padding: 20px 0;
-  width: 65vw;
+  padding: 20px 65px;
   margin: 35px;
   color: white;
   text-transform: uppercase;
+  text-decoration: none;
   &:hover {
     transform: scale(1.1);
     box-shadow: 10px 17px 40px -16px rgba(247, 225, 247, 0.97);
@@ -55,6 +55,7 @@ body {
   text-transform: uppercase;
   color: white;
   border: white solid 1px;
+  text-decoration: none;
   &:hover {
     background: white;
     color: black;
@@ -64,8 +65,30 @@ body {
   }
 }
 
-@media only screen and (min-width: 600px) {
+// Phones
+@media only screen and (max-width: 480px) {
+  .transparentButton {
+    font-size: 16px;
+  }
+  .blackButton {
+    font-size: 16px;
+  }
 }
 
-@media only screen and (min-width: 768px) {
+// Tablets
+@media only screen and (min-width: 480px) and (max-width: 961px) {
+  .transparentButton {
+    font-size: 36px;
+  }
+  .blackButton {
+    font-size: 36px;
+  }
+}
+
+// Desktop
+@media only screen and (min-width: 961px) {
+  .phoneImg,
+  .tabImg {
+    display: none;
+  }
 }
