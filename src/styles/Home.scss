@@ -31,6 +31,7 @@
 
   .whiteBody {
     @include whiteBody();
+    line-height: 26px;
   }
 
   .menuItemTitle {
@@ -71,12 +72,32 @@
     position: relative;
     top: -20px;
   }
+
+  .longLineDeco {
+    background-color: rgb(158, 127, 102);
+    height: 3px;
+    width: 83vw;
+    margin: 0 auto 2.5vh auto;
+  }
+
+  .smallLineDeco {
+    background-color: rgb(158, 127, 102);
+    height: 5px;
+    width: 20vw;
+    margin: 0 auto 5vh auto;
+  }
+  .linesPattern {
+    width: 200px;
+    position: absolute;
+    margin-bottom: -100px;
+  }
 }
 
 // Phones
 @media only screen and (max-width: 480px) {
   .tabletImg,
-  .desktopImg {
+  .desktopImg,
+  .longLineDeco .smallLineDeco {
     display: none;
   }
 }
@@ -85,6 +106,7 @@
 @media only screen and (min-width: 480px) and (max-width: 961px) {
   .whiteBody {
     font-size: 24px;
+    line-height: 40px;
   }
 
   .phoneImg,
@@ -94,7 +116,22 @@
 
   .menuHighligths {
     display: flex;
+    justify-content: flex-start;
     align-items: center;
+  }
+
+  .menuItemTitle {
+    margin-top: 0;
+    font-size: 26px;
+  }
+
+  .menuItemDescr {
+    margin-top: 0;
+  }
+
+  .tabLayout {
+    text-align: left;
+    margin-top: 45px;
   }
 }
 

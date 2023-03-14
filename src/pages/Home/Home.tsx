@@ -1,6 +1,7 @@
 import Collapsible from "react-collapsible";
 import { BsChevronCompactDown } from "react-icons/bs";
 import "../../styles/Home.scss";
+import linesPattern from "./images/pattern-lines.svg";
 
 function Home(): JSX.Element {
   return (
@@ -138,6 +139,7 @@ function Home(): JSX.Element {
           }}
           alt="plate"
         />
+        <img src={linesPattern} className="linesPattern" alt="pattern" />
         <h2 className="blackSubtitle">The most locally sourced food</h2>
         <p className="blackBody">
           All our ingredients come directly from our farm or local fishery. So you can be sure that
@@ -155,10 +157,8 @@ function Home(): JSX.Element {
           <br></br>
           <br></br>
           <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
         </div>
+        <hr className="smallLineDeco" />
         <h2 className="whiteSubtitle">A few highlights from our menu</h2>
         <p className="whiteBody">
           We cater for all dietary requirements, but here’s a glimpse at some of our diner’s
@@ -200,15 +200,16 @@ function Home(): JSX.Element {
               }}
             />
           </div>
-          <div>
+          <div className="tabLayout">
             <h3 className="whiteSubtitle menuItemTitle">Seared Salmon Fillet</h3>
             <p className="whiteBody menuItemDescr">
               Our locally sourced salmon served with a refreshing buckwheat summer salad.
             </p>
           </div>
         </div>
+        <hr className="longLineDeco"></hr>
         <div className="menuHighligths">
-          <div>
+          <div className="menuItem">
             <img
               src={require("./images/beef-mobile@2x.jpg")}
               alt="plate"
@@ -243,13 +244,14 @@ function Home(): JSX.Element {
               }}
             />
           </div>
-          <div>
+          <div className="tabLayout">
             <h3 className="whiteSubtitle menuItemTitle">Rosemary Filet Mignon</h3>
             <p className="whiteBody menuItemDescr">
               Our prime beef served to your taste with a delicious choice of seasonal sides.
             </p>
           </div>
         </div>
+        <hr className="longLineDeco"></hr>
         <div className="menuHighligths">
           <div>
             <img
@@ -286,7 +288,7 @@ function Home(): JSX.Element {
               }}
             />
           </div>
-          <div>
+          <div className="tabLayout">
             <h3 className="whiteSubtitle menuItemTitle">Summer Fruit Chocolate Mousse</h3>
             <p className="whiteBody menuItemDescr">
               Creamy mousse combined with summer fruits and dark chocolate shavings.
