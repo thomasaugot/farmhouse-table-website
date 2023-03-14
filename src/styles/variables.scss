@@ -24,7 +24,6 @@ $font-family: "League Spartan", sans-serif;
 }
 
 @mixin whiteSubtitle {
-  font-size: 32px;
   font-weight: 600;
   line-height: 40px;
   color: white;
@@ -32,7 +31,6 @@ $font-family: "League Spartan", sans-serif;
 }
 
 @mixin blackSubtitle {
-  font-size: 32px;
   font-weight: 700;
   line-height: 40px;
   color: #242b37;

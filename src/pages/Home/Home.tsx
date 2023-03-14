@@ -2,6 +2,9 @@ import Collapsible from "react-collapsible";
 import { BsChevronCompactDown } from "react-icons/bs";
 import "../../styles/Home.scss";
 import linesPattern from "./images/pattern-lines.svg";
+import curveTopLeftPattern from "./images/pattern-curve-top-left.svg";
+import curveTopRightPattern from "./images/pattern-curve-top-right.svg";
+import curveBottomPattern from "./images/pattern-curve-bottom-right.svg";
 
 function Home(): JSX.Element {
   return (
@@ -99,6 +102,12 @@ function Home(): JSX.Element {
           }}
           alt="farm"
         />
+        <img
+          src={curveTopRightPattern}
+          className="shapePattern"
+          alt="pattern"
+          style={{ top: "1300px", left: "0px" }}
+        />
         <h2 className="blackSubtitle" style={{ margin: "-7vh 0 3vh 0" }}>
           Enjoyable place for all the family
         </h2>
@@ -139,7 +148,12 @@ function Home(): JSX.Element {
           }}
           alt="plate"
         />
-        <img src={linesPattern} className="linesPattern" alt="pattern" />
+        <img
+          src={linesPattern}
+          className="linesPattern"
+          alt="pattern"
+          style={{ right: "40px", top: "2000px" }}
+        />
         <h2 className="blackSubtitle">The most locally sourced food</h2>
         <p className="blackBody">
           All our ingredients come directly from our farm or local fishery. So you can be sure that
@@ -299,9 +313,6 @@ function Home(): JSX.Element {
             <br></br>
             <br></br>
             <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
           </div>
         </div>
       </section>
@@ -316,7 +327,7 @@ function Home(): JSX.Element {
           <br></br>
         </div>
 
-        <div>
+        <div className="collapsibleContainer">
           <div className="collapsItem">
             <Collapsible trigger="Family Gathering" transitionTime={800}>
               <img
@@ -473,13 +484,9 @@ function Home(): JSX.Element {
           backgroundImage: `url(${require("./images/ready-bg-mobile.jpg")})`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
+          paddingTop: "8vh",
         }}
       >
-        <div>
-          <br></br>
-          <br></br>
-          <br></br>
-        </div>
         <h2 className="whiteSubtitle">Ready to make a reservation?</h2>
         <a href="/bookings" rel="noreferrer">
           <button className="transparentButton">Book a table</button>

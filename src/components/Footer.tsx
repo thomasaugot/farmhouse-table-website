@@ -33,7 +33,7 @@ function Footer(): JSX.Element {
           </GoogleMap>
         )}
       </div>
-      <IconContext.Provider value={{ color: "white", size: "40px", className: "socialLogo" }}>
+      <IconContext.Provider value={{ color: "white", size: "8%", className: "socialLogo" }}>
         <div>
           <a href="https://www.linkedin.com/in/thomas-augot/" target="_blank" rel="noreferrer">
             <FaFacebook />

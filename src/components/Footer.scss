@@ -12,5 +12,29 @@
 }
 
 .socialLogo {
-  margin: 0 15px 5vh 15px;
+  margin: 10px 15px 5vh 15px;
+}
+
+// Phones
+@media only screen and (max-width: 480px) {
+}
+
+// Tablets
+@media only screen and (min-width: 480px) and (max-width: 961px) {
+  .map-container {
+    width: 70vw;
+    height: 35vh;
+  }
+
+  .mapBox {
+    margin: 2vh 2vw;
+  }
+}
+
+// Desktop
+@media only screen and (min-width: 961px) {
+  .phoneImg,
+  .tabImg {
+    display: none;
+  }
 }
