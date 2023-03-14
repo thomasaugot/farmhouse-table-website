@@ -2,9 +2,9 @@ import Collapsible from "react-collapsible";
 import { BsChevronCompactDown } from "react-icons/bs";
 import "../../styles/Home.scss";
 import linesPattern from "./images/pattern-lines.svg";
-import curveTopLeftPattern from "./images/pattern-curve-top-left.svg";
+// import curveTopLeftPattern from "./images/pattern-curve-top-left.svg";
 import curveTopRightPattern from "./images/pattern-curve-top-right.svg";
-import curveBottomPattern from "./images/pattern-curve-bottom-right.svg";
+// import curveBottomPattern from "./images/pattern-curve-bottom-right.svg";
 
 function Home(): JSX.Element {
   return (
