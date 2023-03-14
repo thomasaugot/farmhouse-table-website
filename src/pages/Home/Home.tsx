@@ -109,6 +109,7 @@ function Home(): JSX.Element {
           />
           <img src={curveTopRightPattern} className="shapePattern" alt="pattern" />
           <div className="Imgdescription">
+            <hr className="smallLineDeco" style={{ margin: "0 3vw 12vh 3vw" }} />
             <h2 className="blackSubtitle" style={{ margin: "-7vh 0 3vh 0" }}>
               Enjoyable place for all the family
             </h2>
@@ -158,6 +159,7 @@ function Home(): JSX.Element {
           />
           <img src={linesPattern} className="linesPattern" alt="pattern" />
           <div className="Imgdescription">
+            <hr className="smallLineDeco" style={{ margin: "0 3vw 5vh 3vw" }} />
             <h2 className="blackSubtitle">The most locally sourced food</h2>
             <p className="blackBody">
               All our ingredients come directly from our farm or local fishery. So you can be sure
@@ -179,8 +181,8 @@ function Home(): JSX.Element {
           <br></br>
           <br></br>
         </div>
-        <hr className="smallLineDeco" />
         <div className="firstColumn">
+          <hr className="smallLineDeco" style={{ margin: "0 3vw 5vh 3vw" }} />
           <h2 className="whiteSubtitle">A few highlights from our menu</h2>
           <p className="whiteBody">
             We cater for all dietary requirements, but here’s a glimpse at some of our diner’s
@@ -283,7 +285,7 @@ function Home(): JSX.Element {
                 alt="plate"
                 className="phoneImg"
                 style={{
-                  width: "10vw",
+                  width: "80vw",
                   height: "auto",
                   margin: "5vh 0 8vh 0",
                   boxShadow: "0px 28px 55px -9px rgba(0,0,0,0.75)",
@@ -319,7 +321,6 @@ function Home(): JSX.Element {
               </p>
             </div>
           </div>
-          <hr className="longLineDeco"></hr>
           <div>
             <br></br>
             <br></br>
@@ -341,46 +342,51 @@ function Home(): JSX.Element {
         <div className="collapsibleContainer">
           <div className="collapsItem">
             <Collapsible trigger="Family Gathering" transitionTime={800}>
-              <img
-                src={require("./images/family-gathering-mobile@2x.jpg")}
-                alt="family"
-                className="phoneImg"
-                style={{
-                  width: "80vw",
-                  height: "auto",
-                  margin: "5vh 0 8vh 0",
-                  boxShadow: "0px 28px 55px -9px rgba(0,0,0,0.75)",
-                }}
-              />
-              <img
-                src={require("./images/family-gathering-tablet@2x.jpg")}
-                alt="family"
-                className="tabletImg"
-                style={{
-                  width: "80vw",
-                  height: "auto",
-                  margin: "5vh 0 8vh 0",
-                  boxShadow: "0px 28px 55px -9px rgba(0,0,0,0.75)",
-                }}
-              />
-              <img
-                src={require("./images/family-gathering-desktop@2x.jpg")}
-                alt="family"
-                className="desktopImg"
-                style={{
-                  width: "80vw",
-                  height: "auto",
-                  margin: "5vh 0 8vh 0",
-                  boxShadow: "0px 28px 55px -9px rgba(0,0,0,0.75)",
-                }}
-              />
-              <p className="blackBody">
-                We love catering for entire families. So please bring everyone along for a special
-                meal with your loved ones. We’ll provide a memorable experience for all.
-              </p>
-              <a href="/bookings" rel="noreferrer">
-                <button className="blackButton">Book a table</button>
-              </a>
+              <div className="desktopCollapse">
+                <img
+                  src={require("./images/family-gathering-mobile@2x.jpg")}
+                  alt="family"
+                  className="phoneImg"
+                  style={{
+                    width: "80vw",
+                    height: "auto",
+                    margin: "5vh 0 8vh 0",
+                    boxShadow: "0px 28px 55px -9px rgba(0,0,0,0.75)",
+                  }}
+                />
+                <img
+                  src={require("./images/family-gathering-tablet@2x.jpg")}
+                  alt="family"
+                  className="tabletImg"
+                  style={{
+                    width: "80vw",
+                    height: "auto",
+                    margin: "5vh 0 8vh 0",
+                    boxShadow: "0px 28px 55px -9px rgba(0,0,0,0.75)",
+                  }}
+                />
+                <img
+                  src={require("./images/family-gathering-desktop@2x.jpg")}
+                  alt="family"
+                  className="desktopImg"
+                  style={{
+                    width: "20vw",
+                    height: "auto",
+                    margin: "5vh 0 8vh 0",
+                    boxShadow: "0px 28px 55px -9px rgba(0,0,0,0.75)",
+                  }}
+                />
+
+                <div>
+                  <p className="blackBody">
+                    We love catering for entire families. So please bring everyone along for a
+                    special meal with your loved ones. We’ll provide a memorable experience for all.
+                  </p>
+                  <a href="/bookings" rel="noreferrer">
+                    <button className="blackButton">Book a table</button>
+                  </a>
+                </div>
+              </div>
             </Collapsible>
           </div>
           <span className="chevron">
@@ -422,13 +428,16 @@ function Home(): JSX.Element {
                   boxShadow: "0px 28px 55px -9px rgba(0,0,0,0.75)",
                 }}
               />
-              <p className="blackBody">
-                Whether it’s a romantic dinner or special date you’re celebrating with others we’ll
-                look after you. We’ll be sure to mark your special date with an unforgettable meal.
-              </p>
-              <a href="/bookings" rel="noreferrer">
-                <button className="blackButton">Book a table</button>
-              </a>
+              <div>
+                <p className="blackBody">
+                  Whether it’s a romantic dinner or special date you’re celebrating with others
+                  we’ll look after you. We’ll be sure to mark your special date with an
+                  unforgettable meal.
+                </p>
+                <a href="/bookings" rel="noreferrer">
+                  <button className="blackButton">Book a table</button>
+                </a>
+              </div>
             </Collapsible>
           </div>
           <span className="chevron">
@@ -470,13 +479,16 @@ function Home(): JSX.Element {
                   boxShadow: "0px 28px 55px -9px rgba(0,0,0,0.75)",
                 }}
               />
-              <p className="blackBody">
-                Are you looking to have a larger social event? No problem! We’re more than happy to
-                cater for big parties. We’ll work with you to make your event a hit with everyone.
-              </p>
-              <a href="/bookings" rel="noreferrer">
-                <button className="blackButton">Book a table</button>
-              </a>
+              <div>
+                <p className="blackBody">
+                  Are you looking to have a larger social event? No problem! We’re more than happy
+                  to cater for big parties. We’ll work with you to make your event a hit with
+                  everyone.
+                </p>
+                <a href="/bookings" rel="noreferrer">
+                  <button className="blackButton">Book a table</button>
+                </a>
+              </div>
             </Collapsible>
           </div>
           <span className="chevron">

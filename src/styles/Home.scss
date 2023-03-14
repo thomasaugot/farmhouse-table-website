@@ -36,9 +36,6 @@
     color: black;
     margin: 2vh 0;
     opacity: 0.7;
-    &:hover {
-      opacity: 1;
-    }
   }
 
   &.Collapsible__trigger.is-open {
@@ -193,10 +190,7 @@
   }
 
   .smallLineDeco {
-    background-color: rgb(158, 127, 102);
-    height: 5px;
-    width: 20vw;
-    margin: 0 auto 5vh auto;
+    display: none;
   }
 }
 
@@ -271,11 +265,14 @@
 
   .tabLayout {
     text-align: left;
-    margin: 0 0 0 10px;
+    margin: 0 0 0 18px;
+    display: flex;
+    flex-direction: column;
   }
 
   .menuHighligths {
     display: flex;
+    align-items: center;
     margin-top: 50px;
   }
 
@@ -290,10 +287,58 @@
     margin: 24vh 4vw 4vh 8vw;
   }
 
+  .smallLineDeco {
+    background-color: rgb(158, 127, 102);
+    height: 3px;
+    border: none;
+    width: 10vw;
+    opacity: 1;
+  }
+
   .longLineDeco {
     background-color: rgb(158, 127, 102);
     height: 3px;
-    width: 83vw;
-    margin: -1px 0 0 0;
+    width: 50vw;
+    margin: 45px 0;
+  }
+
+  .Collapsible {
+    width: 30vw;
+  }
+
+  .chevron {
+    display: none;
+  }
+
+  .collapsibleContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Collapsible__trigger {
+    font-size: 28px;
+    transition: all 0.2s ease-in-out;
+    display: inline-block;
+    &:hover {
+      opacity: 1;
+      transform: scale(1.2);
+      transition: transform 0.2s;
+    }
+  }
+
+  .collapsItem {
+    text-align: center;
+  }
+
+  .Collapsible {
+    width: 80vw;
+  }
+
+  .desktopCollapse {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
   }
 }
