@@ -16,7 +16,7 @@ function Footer(): JSX.Element {
     <div className="Footer">
       <div className="venueInfo">
         <div>
-          <h1 className="title">farmhouse table</h1>
+          <h1 className="title footerTitle">farmhouse table</h1>
           <p style={{ textTransform: "uppercase", fontWeight: "200" }} className="whiteBody">
             Marthwaite, Sedbergh
             <br /> Cumbria

@@ -10,7 +10,7 @@
     display: flex;
     background-color: black;
     text-align: center;
-    width: 100vw;
+    max-width: 100vw;
   }
 
   .firstSubtitle {
@@ -412,6 +412,25 @@
     }
     .transparentButton {
       margin: 0;
+    }
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .Header {
+    margin-left: 20vw;
+    .firstSubtitle {
+      font-size: 48px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .Header {
+    margin-left: 20vw;
+    height: 100vh;
+    .firstSubtitle {
+      font-size: 58px;
     }
   }
 }

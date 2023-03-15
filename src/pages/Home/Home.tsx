@@ -37,7 +37,7 @@ function Home(): JSX.Element {
           }}
           alt="plate"
         />
-        <div>
+        <div style={{ marginLeft: "5vw" }}>
           <h1 className="title">farmhouse table</h1>
           <div className="intro">
             <h2 className="firstSubtitle">Exquisite dining since 1989</h2>
