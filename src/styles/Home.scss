@@ -10,6 +10,7 @@
     display: flex;
     background-color: black;
     text-align: center;
+    width: 100vw;
   }
 
   .firstSubtitle {
@@ -257,12 +258,12 @@
   .intro {
     position: absolute;
     width: 40vw;
-    margin: 6vh 10vw;
+    margin: 6vh 16vw;
     text-align: left;
   }
 
   .title {
-    margin: 6vh 8vw 3vh 8vw;
+    margin: 6vh 8vw 3vh 19vw;
     line-height: 60px;
   }
 
