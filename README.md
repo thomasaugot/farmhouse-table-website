@@ -1,7 +1,13 @@
 # Farmhouse Table | Restaurant Website
 
+<br>
+
+<img src="./src/captures/farmhouse (2).png">
+
+<br>
+
 I created this application based on a coding challenge's design.
-It is a restaurant landing page based on 2 pages, one homepage and one booking page. The whole app is fully responsive based on the mobile first workflow, using flexbox.
+It is a restaurant website based on 2 pages, one homepage and one booking page. The whole app is fully responsive following the mobile first workflow, using flexbox.
 
 <br>
 
