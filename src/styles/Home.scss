@@ -29,6 +29,15 @@
     margin-top: 1vh;
   }
 
+  .menuSection {
+    background-color: black;
+  }
+
+  .secondSection {
+    background-color: white;
+    padding: 0 2% 7% 2%;
+  }
+
   .Collapsible__trigger {
     @include blackSubtitle();
     font-weight: 200;
@@ -60,6 +69,11 @@
     position: absolute;
     z-index: 1;
   }
+
+  .collapsection {
+    background-color: white;
+    padding: 9% 0 7% 0;
+  }
 }
 
 // Phones
@@ -71,6 +85,10 @@
   .linesPattern,
   .shapePattern {
     display: none;
+  }
+
+  .Header {
+    padding-bottom: 9%;
   }
 
   .firstSubtitle {
@@ -98,6 +116,10 @@
     font-size: 26px;
   }
 
+  .menuSection {
+    padding: 15% 2%;
+  }
+
   .Collapsible__trigger {
     font-size: 26px;
   }
@@ -106,6 +128,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  .topFooter {
+    background-image: url("../pages/Home/images/ready-bg-mobile@2x.jpg");
+    padding-top: 8vh;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 
@@ -119,6 +148,14 @@
     font-size: 28px;
     line-height: 40px;
     margin: 0 5vw;
+  }
+
+  .Header {
+    padding-bottom: 9%;
+  }
+
+  .menuSection {
+    padding: 15% 2% 7% 2%;
   }
 
   .phoneImg,
@@ -192,6 +229,13 @@
   .smallLineDeco {
     display: none;
   }
+
+  .topFooter {
+    background-image: url("../pages/Home/images/ready-bg-tablet@2x.jpg");
+    padding-top: 8vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 
 // Desktop
@@ -261,6 +305,7 @@
 
   .menuSection {
     display: flex;
+    padding-bottom: 7%;
   }
 
   .tabLayout {
@@ -340,5 +385,31 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+  }
+
+  .collapsibleText {
+    width: 40vw;
+    margin: 0 10vw;
+  }
+
+  .topFooter {
+    background-image: url("../pages/Home/images/ready-bg-desktop@2x.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 240px;
+    h2 {
+      margin-right: 29%;
+    }
+    h2,
+    a {
+      padding: 0;
+    }
+    .transparentButton {
+      margin: 0;
+    }
   }
 }

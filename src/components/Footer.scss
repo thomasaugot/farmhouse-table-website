@@ -15,6 +15,10 @@
   margin: 10px 15px 5vh 15px;
 }
 
+.Footer {
+  padding: 5% 0;
+}
+
 // Phones
 @media only screen and (max-width: 480px) {
 }
@@ -36,5 +40,37 @@
   .phoneImg,
   .tabImg {
     display: none;
+  }
+
+  .venueInfo {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .mapBox {
+    width: 30%;
+    height: 300px;
+    margin: 50px 0;
+  }
+
+  .map-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .socialLogo {
+    margin: 20px;
+    width: 40px;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  .socialLogo > * {
+    margin-right: 20px;
   }
 }

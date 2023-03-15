@@ -52,18 +52,8 @@ function Home(): JSX.Element {
             </a>
           </div>
         </div>
-
-        <div>
-          <br></br>
-          <br></br>
-          <br></br>
-        </div>
       </section>
-      <section
-        style={{
-          backgroundColor: "white",
-        }}
-      >
+      <section className="secondSection">
         <div className="photoSection" style={{ flexDirection: "row" }}>
           <img
             src={require("../../pages/Home/images/enjoyable-place-mobile@2x.jpg")}
@@ -119,7 +109,6 @@ function Home(): JSX.Element {
             </p>
           </div>
         </div>
-
         <div className="photoSection" style={{ flexDirection: "row-reverse" }}>
           <img
             src={require("../../pages/Home/images/locally-sourced-mobile@2x.jpg")}
@@ -167,20 +156,8 @@ function Home(): JSX.Element {
             </p>
           </div>
         </div>
-
-        <div>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-        </div>
       </section>
-      <section style={{ backgroundColor: "black" }} className="menuSection">
-        <div>
-          <br></br>
-          <br></br>
-          <br></br>
-        </div>
+      <section className="menuSection">
         <div className="firstColumn">
           <hr className="smallLineDeco" style={{ margin: "0 3vw 5vh 3vw" }} />
           <h2 className="whiteSubtitle">A few highlights from our menu</h2>
@@ -321,27 +298,12 @@ function Home(): JSX.Element {
               </p>
             </div>
           </div>
-          <div>
-            <br></br>
-            <br></br>
-            <br></br>
-          </div>
         </div>
       </section>
-      <section
-        style={{
-          backgroundColor: "white",
-        }}
-      >
-        <div>
-          <br></br>
-          <br></br>
-          <br></br>
-        </div>
-
+      <section className="collapsection">
         <div className="collapsibleContainer">
           <div className="collapsItem">
-            <Collapsible trigger="Family Gathering" transitionTime={800}>
+            <Collapsible trigger="Family Gathering" transitionTime={600}>
               <div className="desktopCollapse">
                 <img
                   src={require("./images/family-gathering-mobile@2x.jpg")}
@@ -372,13 +334,13 @@ function Home(): JSX.Element {
                   style={{
                     width: "20vw",
                     height: "auto",
-                    margin: "5vh 0 8vh 0",
+                    margin: "5vh 0 12vh 5vw",
                     boxShadow: "0px 28px 55px -9px rgba(0,0,0,0.75)",
                   }}
                 />
 
                 <div>
-                  <p className="blackBody">
+                  <p className="blackBody collapsibleText">
                     We love catering for entire families. So please bring everyone along for a
                     special meal with your loved ones. We’ll provide a memorable experience for all.
                   </p>
@@ -394,49 +356,51 @@ function Home(): JSX.Element {
           </span>
 
           <div className="collapsItem">
-            <Collapsible trigger="Special Events" transitionTime={800}>
-              <img
-                src={require("./images/special-events-mobile@2x.jpg")}
-                alt="family"
-                className="phoneImg"
-                style={{
-                  width: "80vw",
-                  height: "auto",
-                  margin: "5vh 0 8vh 0",
-                  boxShadow: "0px 28px 55px -9px rgba(0,0,0,0.75)",
-                }}
-              />
-              <img
-                src={require("./images/special-events-tablet@2x.jpg")}
-                alt="family"
-                className="tabletImg"
-                style={{
-                  width: "80vw",
-                  height: "auto",
-                  margin: "5vh 0 8vh 0",
-                  boxShadow: "0px 28px 55px -9px rgba(0,0,0,0.75)",
-                }}
-              />
-              <img
-                src={require("./images/special-events-desktop@2x.jpg")}
-                alt="family"
-                className="desktopImg"
-                style={{
-                  width: "80vw",
-                  height: "auto",
-                  margin: "5vh 0 8vh 0",
-                  boxShadow: "0px 28px 55px -9px rgba(0,0,0,0.75)",
-                }}
-              />
-              <div>
-                <p className="blackBody">
-                  Whether it’s a romantic dinner or special date you’re celebrating with others
-                  we’ll look after you. We’ll be sure to mark your special date with an
-                  unforgettable meal.
-                </p>
-                <a href="/bookings" rel="noreferrer">
-                  <button className="blackButton">Book a table</button>
-                </a>
+            <Collapsible trigger="Special Events" transitionTime={600}>
+              <div className="desktopCollapse">
+                <img
+                  src={require("./images/special-events-mobile@2x.jpg")}
+                  alt="family"
+                  className="phoneImg"
+                  style={{
+                    width: "80vw",
+                    height: "auto",
+                    margin: "5vh 0 8vh 0",
+                    boxShadow: "0px 28px 55px -9px rgba(0,0,0,0.75)",
+                  }}
+                />
+                <img
+                  src={require("./images/special-events-tablet@2x.jpg")}
+                  alt="family"
+                  className="tabletImg"
+                  style={{
+                    width: "80vw",
+                    height: "auto",
+                    margin: "5vh 0 8vh 0",
+                    boxShadow: "0px 28px 55px -9px rgba(0,0,0,0.75)",
+                  }}
+                />
+                <img
+                  src={require("./images/special-events-desktop@2x.jpg")}
+                  alt="family"
+                  className="desktopImg"
+                  style={{
+                    width: "20vw",
+                    height: "auto",
+                    margin: "5vh 0 12vh 5vw",
+                    boxShadow: "0px 28px 55px -9px rgba(0,0,0,0.75)",
+                  }}
+                />
+                <div>
+                  <p className="blackBody collapsibleText">
+                    Whether it’s a romantic dinner or special date you’re celebrating with others
+                    we’ll look after you. We’ll be sure to mark your special date with an
+                    unforgettable meal.
+                  </p>
+                  <a href="/bookings" rel="noreferrer">
+                    <button className="blackButton">Book a table</button>
+                  </a>
+                </div>
               </div>
             </Collapsible>
           </div>
@@ -445,71 +409,60 @@ function Home(): JSX.Element {
           </span>
 
           <div className="collapsItem">
-            <Collapsible trigger="Social Events" transitionTime={800}>
-              <img
-                src={require("./images/social-events-mobile@2x.jpg")}
-                alt="family"
-                className="phoneImg"
-                style={{
-                  width: "80vw",
-                  height: "auto",
-                  margin: "5vh 0 8vh 0",
-                  boxShadow: "0px 28px 55px -9px rgba(0,0,0,0.75)",
-                }}
-              />
-              <img
-                src={require("./images/social-events-tablet@2x.jpg")}
-                alt="family"
-                className="tabletImg"
-                style={{
-                  width: "80vw",
-                  height: "auto",
-                  margin: "5vh 0 8vh 0",
-                  boxShadow: "0px 28px 55px -9px rgba(0,0,0,0.75)",
-                }}
-              />
-              <img
-                src={require("./images/social-events-desktop@2x.jpg")}
-                alt="family"
-                className="desktopImg"
-                style={{
-                  width: "80vw",
-                  height: "auto",
-                  margin: "5vh 0 8vh 0",
-                  boxShadow: "0px 28px 55px -9px rgba(0,0,0,0.75)",
-                }}
-              />
-              <div>
-                <p className="blackBody">
-                  Are you looking to have a larger social event? No problem! We’re more than happy
-                  to cater for big parties. We’ll work with you to make your event a hit with
-                  everyone.
-                </p>
-                <a href="/bookings" rel="noreferrer">
-                  <button className="blackButton">Book a table</button>
-                </a>
+            <Collapsible trigger="Social Events" transitionTime={600}>
+              <div className="desktopCollapse">
+                <img
+                  src={require("./images/social-events-mobile@2x.jpg")}
+                  alt="family"
+                  className="phoneImg"
+                  style={{
+                    width: "80vw",
+                    height: "auto",
+                    margin: "5vh 0 8vh 0",
+                    boxShadow: "0px 28px 55px -9px rgba(0,0,0,0.75)",
+                  }}
+                />
+                <img
+                  src={require("./images/social-events-tablet@2x.jpg")}
+                  alt="family"
+                  className="tabletImg"
+                  style={{
+                    width: "80vw",
+                    height: "auto",
+                    margin: "5vh 0 8vh 0",
+                    boxShadow: "0px 28px 55px -9px rgba(0,0,0,0.75)",
+                  }}
+                />
+                <img
+                  src={require("./images/social-events-desktop@2x.jpg")}
+                  alt="family"
+                  className="desktopImg"
+                  style={{
+                    width: "20vw",
+                    height: "auto",
+                    margin: "5vh 0 12vh 5vw",
+                    boxShadow: "0px 28px 55px -9px rgba(0,0,0,0.75)",
+                  }}
+                />
+                <div>
+                  <p className="blackBody collapsibleText">
+                    Are you looking to have a larger social event? No problem! We’re more than happy
+                    to cater for big parties. We’ll work with you to make your event a hit with
+                    everyone.
+                  </p>
+                  <a href="/bookings" rel="noreferrer">
+                    <button className="blackButton">Book a table</button>
+                  </a>
+                </div>
               </div>
             </Collapsible>
           </div>
           <span className="chevron">
             <BsChevronCompactDown />
           </span>
-
-          <div>
-            <br></br>
-            <br></br>
-            <br></br>
-          </div>
         </div>
       </section>
-      <section
-        style={{
-          backgroundImage: `url(${require("./images/ready-bg-mobile.jpg")})`,
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "cover",
-          paddingTop: "8vh",
-        }}
-      >
+      <section className="topFooter">
         <h2 className="whiteSubtitle">Ready to make a reservation?</h2>
         <a href="/bookings" rel="noreferrer">
           <button className="transparentButton">Book a table</button>
