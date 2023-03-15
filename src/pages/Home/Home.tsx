@@ -32,8 +32,8 @@ function Home(): JSX.Element {
           className="desktopImg"
           src={require("./images/hero-bg-desktop@2x.jpg")}
           style={{
-            width: "auto",
-            height: "130vh",
+            maxWidth: "62%",
+            height: "auto",
           }}
           alt="plate"
         />
