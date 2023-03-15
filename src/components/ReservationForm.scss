@@ -1,0 +1,60 @@
+@import "../styles/variables.scss";
+
+.reservation-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+
+  &__input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  &__label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+  }
+
+  &__input {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+
+  &__submit-btn {
+    padding: 10px 20px;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #0062cc;
+    }
+  }
+}
+
+.error-message,
+.success-message {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.error-message {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.success-message {
+  background-color: #d4edda;
+  color: #155724;
+}
