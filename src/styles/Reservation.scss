@@ -13,9 +13,95 @@
     background-color: white;
   }
 }
-
-@media only screen and (min-width: 600px) {
+.form-container {
+  overflow: visible;
+  margin: 5vh 0 0 0;
+  box-shadow: 0px 28px 55px -9px rgba(0, 0, 0, 0.75);
+  position: relative;
+  background-color: white;
 }
 
-@media only screen and (min-width: 768px) {
+.link {
+  color: black;
+  text-underline-offset: 14px;
+}
+
+// Phones
+@media only screen and (max-width: 480px) {
+  .bookings-header {
+    background-image: url("../pages/Bookings/images/hero-bg-mobile@2x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5% 0 25% 0;
+  }
+
+  .form-container {
+    width: 80vw;
+    bottom: 13vh;
+  }
+
+  .formSection {
+    height: 60vh;
+  }
+
+  .link {
+    margin: -6vh 0 0 0;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 961px) {
+  .bookings-header {
+    background-image: url("../pages/Bookings/images/hero-bg-tablet@2x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5% 0 20% 0;
+  }
+  .form-container {
+    width: 80vw;
+    bottom: 13vh;
+  }
+
+  .formSection {
+    height: 50vh;
+  }
+
+  .link {
+    margin: -6vh 0 1vh 0;
+  }
+}
+
+@media only screen and (min-width: 961px) {
+  .bookings-header {
+    background-image: url("../pages/Bookings/images/hero-bg-desktop@2x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5% 0 20% 0;
+    text-align: left;
+    max-height: 75vh;
+    h1,
+    h2,
+    p {
+      max-width: 30vw;
+      margin: 0 0 0 12vw;
+    }
+    h1 {
+      margin-bottom: 13vh;
+    }
+    h2 {
+      margin-bottom: 5vh;
+      font-size: 48px;
+      font-weight: 200;
+    }
+  }
+
+  .form-container {
+    width: 30vw;
+    height: auto;
+    bottom: 45vh;
+    left: 20vw;
+  }
+
+  .link {
+    margin: -16vh 0 4vh 0;
+  }
 }

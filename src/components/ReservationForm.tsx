@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import { ReservationData } from "../components/types";
 import "./ReservationForm.scss";
+import "../styles/variables.scss";
+
+import plus from "../pages/Bookings/images/icon-plus.svg";
+import minus from "../pages/Bookings/images/icon-minus.svg";
 
 interface ReservationFormProps {
   availableDates: string[]; // array of available dates
@@ -17,7 +21,7 @@ const ReservationForm: React.FC<ReservationFormProps> = ({
   const [email, setEmail] = useState("");
   const [date, setDate] = useState("");
   const [time, setTime] = useState("");
-  const [guests, setGuests] = useState(1);
+  const [guests, setGuests] = useState(2);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isError, setIsError] = useState(false);
 
@@ -61,31 +65,34 @@ const ReservationForm: React.FC<ReservationFormProps> = ({
   };
 
   return (
-    <div className="reservation-form__input-group">
+    <div className="form">
       {isError && <div className="error-message">All fields are required.</div>}
-      {isSubmitted && <div className="success-message">Your reservation has been submitted!</div>}
+      {isSubmitted && (
+        <div className="success-message">
+          Your reservation has been submitted! <br /> You should receive a confirmation per email
+          within 24 hours
+        </div>
+      )}
       <form onSubmit={handleSubmit}>
-        <label className="reservation-form__label">
-          Name:
-          <input
-            type="text"
-            value={fullname}
-            onChange={handleNameChange}
-            className="reservation-form__input"
-          />
-        </label>
-        <label className="reservation-form__label">
-          Email:
-          <input
-            type="email"
-            value={email}
-            onChange={handleEmailChange}
-            className="reservation-form__input"
-          />
-        </label>
-        <label className="reservation-form__label">
-          Pick a date:
-          <select value={date} onChange={handleDateChange} className="reservation-form__input">
+        <input
+          type="text"
+          placeholder="Full name"
+          value={fullname}
+          onChange={handleNameChange}
+          className="inputs"
+        />
+        <br />
+        <input
+          type="email"
+          placeholder="Email"
+          value={email}
+          onChange={handleEmailChange}
+          className="inputs"
+        />
+        <br />
+        <label>
+          Pick a date&nbsp;
+          <select value={date} onChange={handleDateChange}>
             <option value="">--Select date--</option>
             {availableDates.map((d) => (
               <option key={d} value={d}>
@@ -94,9 +101,10 @@ const ReservationForm: React.FC<ReservationFormProps> = ({
             ))}
           </select>
         </label>
-        <label className="reservation-form__label">
-          Pick a time:
-          <select value={time} onChange={handleTimeChange} className="reservation-form__input">
+        <br />
+        <label>
+          Pick a time&nbsp;
+          <select value={time} onChange={handleTimeChange}>
             <option value="">--Select time--</option>
             {availableTimes.map((t) => (
               <option key={t} value={t}>
@@ -105,17 +113,21 @@ const ReservationForm: React.FC<ReservationFormProps> = ({
             ))}
           </select>
         </label>
-        <label className="reservation-form__label">
-          Number of guests:
-          <button type="button" onClick={handleGuestsDecrease}>
-            -
+        <br />
+        <div className="peopleSelect">
+          <button type="button" className="symbol" onClick={handleGuestsDecrease}>
+            <img src={minus} alt="symbol" />
           </button>
-          <span className="reservation-form__input">{guests}</span>
-          <button type="button" onClick={handleGuestsIncrease}>
-            +
+          <span>{guests} people</span>
+          <button type="button" className="symbol" onClick={handleGuestsIncrease}>
+            <img src={plus} alt="symbol" />
           </button>
-        </label>
-        <button type="submit">Make Reservation</button>
+        </div>
+
+        <br />
+        <button type="submit" className="submitButton">
+          Make Reservation
+        </button>
       </form>
     </div>
   );

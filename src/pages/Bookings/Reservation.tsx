@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import ReservationForm from "../../components/ReservationForm";
 import { ReservationData } from "../../components/types";
 import "../../styles/Reservation.scss";
@@ -12,15 +13,11 @@ const Reservation: React.FC = () => {
   };
   return (
     <div className="Bookings">
-      <section
-        style={{
-          backgroundImage: `url(${require("./images/hero-bg-mobile@2x.jpg")})`,
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "cover",
-        }}
-      >
-        <br></br>
-        <h1 className="title">farmhouse table</h1>
+      <section className="bookings-header">
+        <Link to={"/"} style={{ textDecoration: "none" }}>
+          <h1 className="title">farmhouse table</h1>
+        </Link>
+
         <h2 className="whiteSubtitle" style={{ color: "white" }}>
           Reservations
         </h2>
@@ -30,29 +27,16 @@ const Reservation: React.FC = () => {
         </p>
       </section>
       <section className="formSection">
-        <div
-          style={{
-            overflow: "visible",
-            width: "80vw",
-            height: "auto",
-            margin: "5vh 0 0 0",
-            boxShadow: "0px 28px 55px -9px rgba(0,0,0,0.75)",
-            position: "relative",
-            bottom: "15vh",
-            backgroundColor: "white",
-          }}
-        >
-          <div>
-            <ReservationForm
-              availableDates={availableDates}
-              availableTimes={availableTimes}
-              onSubmit={handleReservationSubmit}
-            />
-          </div>
+        <div className="form-container">
+          <ReservationForm
+            availableDates={availableDates}
+            availableTimes={availableTimes}
+            onSubmit={handleReservationSubmit}
+          />
         </div>
-        <a href="/" rel="noreferrer">
-          <button className="blackButton">back to homepage</button>
-        </a>
+        <Link to={"/"} className="link">
+          <h4 style={{ color: "black" }}>Back to homepage</h4>
+        </Link>
       </section>
     </div>
   );
